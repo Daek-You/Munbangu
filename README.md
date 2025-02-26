@@ -1,64 +1,87 @@
 # 문방구 (문화재 탐방 친구)
 
-> <b>"초등학생과 인솔자를 위한 교육용 문화재 탐방 어플"</b>
+> **"초등학생과 인솔자를 위한 교육용 문화재 탐방 어플"**
 
-<img src="./images/어플디자인_메인화면.png" width="400" height="500">
+<p align="center">
+  <img src="./images/어플디자인_메인화면.png" width="300">
+</p>
 
 ## 1. 소개
 
-현장학습에서 `학생`들은 <b>사진 인증의 번거로움, 단순 관람과 불분명한 학습 목적으로 인한 <u>지루함을 호소</u></b>하고 있으며, `인솔자`들은 <b><u>실시간 활동 현황 파악의 어려움과 체계적인 관리 도구의 부재</u></b>로 고민하고 있습니다. 이러한 문제를 해결하고자 GPS 위치 서비스와 게임적 요소를 접목한 새로운 교육용 앱을 기획하게 되었습니다. 학생들은 퀴즈와 미션을 해결하며 문화재를 즐겁게 배울 수 있고, 인솔자들은 실시간 모니터링과 체계적인 관리 도구를 활용할 수 있어 보다 효율적인 현장학습이 가능해질 것으로 기대됩니다.
+현장학습에서 `학생`들은 **사진 인증의 번거로움, 단순 관람과 불분명한 학습 목적으로 인한 지루함을 호소**하고 있으며, `인솔자`들은 **실시간 활동 현황 파악의 어려움과 체계적인 관리 도구의 부재**로 고민하고 있습니다. 이러한 문제를 해결하고자 GPS 위치 서비스와 게임적 요소를 접목한 새로운 교육용 앱을 기획하게 되었습니다. 학생들은 퀴즈와 미션을 해결하며 문화재를 즐겁게 배울 수 있고, 인솔자들은 실시간 모니터링과 체계적인 관리 도구를 활용할 수 있어 보다 효율적인 현장학습이 가능해질 것으로 기대됩니다.
 
 ## 2. 기능 소개
 
 ### 요구사항 명세서
 
-<img src="./images/요구사항_명세서.png" width="400" height="500">
+<p align="center">
+  <img src="./images/요구사항_명세서.png" width="600">
+</p>
 
 ### MBG
 
 #### 스플래시 화면 및 로그인 회원 가입 화면
 
-- **회원가입**
-  <img src="./images/회원가입.gif" width="400" height="500">
-  스플래시 화면 이후에 회원이 아니라면 회원가입 진행
-- **로그인**
-  <img src="./images/로그인.gif" width="400" height="500">
-  회원이라면 바로 로그인 진행
+<table>
+  <tr>
+    <td align="center"><b>회원가입</b></td>
+    <td align="center"><b>로그인</b></td>
+  </tr>
+  <tr>
+    <td><img src="./images/회원가입.gif" width="300"></td>
+    <td><img src="./images/로그인.gif" width="300"></td>
+  </tr>
+</table>
 
 #### 안전 수칙
 
-- **회원가입 시 안전 수칙 퀴즈 진행**
-  <img src="./images/ox퀴즈.gif" width="400" height="500">
+<p align="center">
+  <img src="./images/ox퀴즈.gif" width="300">
+  <br>
+  <b>회원가입 시 안전 수칙 퀴즈 진행</b>
+</p>
 
 #### 메인 화면
 
-- **팀 참가**
-  <img src="./images/초대코드 입력.gif" width="400" height="500">
-  메인 화면에서 초대코드 입력 후 팀 참가
-- **알림 공지**
-  <img src="./images/일정알림.gif" width="400" height="500">
-  일정 알림
-- **공지 알림**
-  <img src="./images/공지알림.gif" width="400" height="500">
-  공지 알림
-- **만족도 조사**
-  <img src="./images/만족도조사 (1).gif" width="400" height="500">
-  만족도 조사 알림 클릭 시 만족도 조사 화면으로 바로 이동
+<table>
+  <tr>
+    <td align="center"><b>팀 참가</b></td>
+    <td align="center"><b>알림 공지</b></td>
+  </tr>
+  <tr>
+    <td><img src="./images/초대코드 입력.gif" width="300"></td>
+    <td><img src="./images/일정알림.gif" width="300"></td>
+  </tr>
+  <tr>
+    <td align="center"><b>공지 알림</b></td>
+    <td align="center"><b>만족도 조사</b></td>
+  </tr>
+  <tr>
+    <td><img src="./images/공지알림.gif" width="300"></td>
+    <td><img src="./images/만족도조사 (1).gif" width="300"></td>
+  </tr>
+</table>
 
 #### 지도 및 게임 화면
 
-- **지도**
-  <img src="./images/미션지도.png" width="400" height="500">
-  미션 화면에서 초기에 보여지는 지도
-- **미션 - 주관식 퀴즈**
-  <img src="./images/미션.png" width="400" height="500">
-  랜덤 미션으로 하루마다 랜덤한 위치에 미션 생성 해당 문제 풀이 시 **일화 카드 수집 가능**
-- **미션 - 객관식 퀴즈**
-  <img src="./images/미션(객관식).png" width="400" height="500">
-  객관식 미션으로 해당 문화재에 대한 학습 및 해당 문제 풀이 시 **문화재 카드 수집 가능**
-- **미션 - 인증샷**
-  <img src="./images/미션(인증샷).png" width="400" height="500">
-  팀 미션으로 해당 미션 접근 시 사진 촬영 및 제출 가능
+<table>
+  <tr>
+    <td align="center"><b>지도</b></td>
+    <td align="center"><b>미션 - 주관식 퀴즈</b></td>
+  </tr>
+  <tr>
+    <td><img src="./images/미션지도.png" width="300"></td>
+    <td><img src="./images/미션.png" width="300"></td>
+  </tr>
+  <tr>
+    <td align="center"><b>미션 - 객관식 퀴즈</b></td>
+    <td align="center"><b>미션 - 인증샷</b></td>
+  </tr>
+  <tr>
+    <td><img src="./images/미션(객관식).png" width="300"></td>
+    <td><img src="./images/미션(인증샷).png" width="300"></td>
+  </tr>
+</table>
 
 #### 도감 화면
 
