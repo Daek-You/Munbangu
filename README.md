@@ -122,7 +122,7 @@
   </tr>
   <tr>
     <td><img src="./images/팀생성.gif" width="300"></td>
-    <td><img src="./images/팀 상세보기.gif" width="300"></td>
+    <td><img src="./images/모자이크.gif" width="300"></td>
   </tr>
   <tr>
     <td align="center">현장 체험 학습을 진행할 팀 생성</td>
