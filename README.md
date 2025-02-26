@@ -175,6 +175,38 @@
   </tr>
 </table>
 
+### 기술 스택
+
+<div align="center">
+
+#### 🏗️ Infrastructure
+
+<img src="https://img.shields.io/badge/jenkins-D24939?style=for-the-badge&logo=jenkins&logoColor=white">
+<img src="https://img.shields.io/badge/amazon%20s3-569A31?style=for-the-badge&logo=amazon%20s3&logoColor=white">
+<img src="https://img.shields.io/badge/amazon%20ec2-FF9900?style=for-the-badge&logo=amazon%20ec2&logoColor=white">
+<img src="https://img.shields.io/badge/docker-2496ED?style=for-the-badge&logo=docker&logoColor=white">
+<img src="https://img.shields.io/badge/nginx-009639?style=for-the-badge&logo=nginx&logoColor=white">
+
+#### 📱 Client
+
+<img src="https://img.shields.io/badge/kotlin-7F52FF?style=for-the-badge&logo=kotlin&logoColor=white">
+<img src="https://img.shields.io/badge/android%20studio-3DDC84?style=for-the-badge&logo=android%20studio&logoColor=white">
+<img src="https://img.shields.io/badge/retrofit2-3E4348?style=for-the-badge&logo=square&logoColor=white">
+<img src="https://img.shields.io/badge/okhttp3-3E4348?style=for-the-badge&logo=square&logoColor=white">
+<img src="https://img.shields.io/badge/glide-3E4348?style=for-the-badge&logo=square&logoColor=white">
+<img src="https://img.shields.io/badge/hilt-3E4348?style=for-the-badge&logo=square&logoColor=white">
+
+#### 💻 Server
+
+<img src="https://img.shields.io/badge/spring%20boot-6DB33F?style=for-the-badge&logo=spring%20boot&logoColor=white">
+<img src="https://img.shields.io/badge/mysql-4479A1?style=for-the-badge&logo=mysql&logoColor=white">
+<img src="https://img.shields.io/badge/firebase-FFCA28?style=for-the-badge&logo=firebase&logoColor=black">
+<img src="https://img.shields.io/badge/java-007396?style=for-the-badge&logo=java&logoColor=white">
+<img src="https://img.shields.io/badge/jwt-000000?style=for-the-badge&logo=json%20web%20tokens&logoColor=white">
+<img src="https://img.shields.io/badge/spring%20security-6DB33F?style=for-the-badge&logo=spring%20security&logoColor=white">
+
+</div>
+
 ## 3. 기대효과
 
 ### 3-1. 학생
