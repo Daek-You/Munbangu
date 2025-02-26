@@ -85,49 +85,95 @@
 
 #### 도감 화면
 
-- **수집 아이템 확인**
-  <img src="./images/도감 페이지.gif" width="400" height="500">
-  본인이 수집한 아이템을 문화재, 일화 별로 확인 가능함
+<table>
+  <tr>
+    <td align="center"><b>수집 아이템 확인</b></td>
+  </tr>
+  <tr>
+    <td><img src="./images/도감 페이지.gif" width="300"></td>
+  </tr>
+  <tr>
+    <td align="center">본인이 수집한 아이템을 문화재, 일화 별로 확인 가능함</td>
+  </tr>
+</table>
 
 #### 꾸미 백과
 
-- **풀이 기록 확인**
-  <img src="./images/꾸미백과.gif" width="400" height="500">
-  본인이 풀었던 문제에 해당하는 문화재에 대한 자세한 설명 조회 가능
+<table>
+  <tr>
+    <td align="center"><b>풀이 기록 확인</b></td>
+  </tr>
+  <tr>
+    <td><img src="./images/꾸미백과.gif" width="300"></td>
+  </tr>
+  <tr>
+    <td align="center">본인이 풀었던 문제에 해당하는 문화재에 대한 자세한 설명 조회 가능</td>
+  </tr>
+</table>
 
 ### TMBG
 
 #### 팀 관리
 
-- **팀 생성**
-  <img src="./images/팀생성.gif" width="400" height="500">
-  현장 체험 학습을 진행할 팀 생성
-- **팀 조회**
-  <img src="./images/팀 상세보기.gif" width="400" height="500">
-  팀 상세 보기로, 조 별로 조회가 가능하고 인원과 미션(인증샷) 진행률, 인증샷 조회 가능
-  현장체험 종료 시 만족도 조사 알림 전송송
+<table>
+  <tr>
+    <td align="center"><b>팀 생성</b></td>
+    <td align="center"><b>팀 조회</b></td>
+  </tr>
+  <tr>
+    <td><img src="./images/팀생성.gif" width="300"></td>
+    <td><img src="./images/팀 상세보기.gif" width="300"></td>
+  </tr>
+  <tr>
+    <td align="center">현장 체험 학습을 진행할 팀 생성</td>
+    <td align="center">팀 상세 보기로, 조 별로 조회가 가능하고 인원과 미션(인증샷) 진행률, 인증샷 조회 가능<br>현장체험 종료 시 만족도 조사 알림 전송</td>
+  </tr>
+</table>
 
 #### 전체 공지
 
-- **공지 생성**
-  <img src="./images/공지.png" width="400" height="500">
-  공지 생성 및 이전에 생성했던 공지 조회 가능
+<table>
+  <tr>
+    <td align="center"><b>공지 생성</b></td>
+  </tr>
+  <tr>
+    <td><img src="./images/공지.png" width="300"></td>
+  </tr>
+  <tr>
+    <td align="center">공지 생성 및 이전에 생성했던 공지 조회 가능</td>
+  </tr>
+</table>
 
 #### 일정 관리
 
-- **일정 생성**
-  <img src="./images/일정생성.png" width="400" height="500">
-  일정 생성 일정은 시작 10분전에 학생들에게 알림 전송
-- **일정 조회**
-  <img src="./images/일정조회.png" width="400" height="500">
-  일정 조회 및 삭제
+<table>
+  <tr>
+    <td align="center"><b>일정 생성</b></td>
+    <td align="center"><b>일정 조회</b></td>
+  </tr>
+  <tr>
+    <td><img src="./images/일정생성.png" width="300"></td>
+    <td><img src="./images/일정조회.png" width="300"></td>
+  </tr>
+  <tr>
+    <td align="center">일정 생성 일정은 시작 10분전에 학생들에게 알림 전송</td>
+    <td align="center">일정 조회 및 삭제</td>
+  </tr>
+</table>
 
 #### 보고서 관리
 
-- **보고서 PDF 작성**
-  <img src="./images/보고서.gif" width="400" height="500">
-  만족도 조사를 완료한 학생이 표시 되고, 모든 학생이 완료하면 보고서 작성
-  PDF로 내보내기 클릭 시 체험학습 종료
+<table>
+  <tr>
+    <td align="center"><b>보고서 PDF 작성</b></td>
+  </tr>
+  <tr>
+    <td><img src="./images/보고서.gif" width="300"></td>
+  </tr>
+  <tr>
+    <td align="center">만족도 조사를 완료한 학생이 표시 되고, 모든 학생이 완료하면 보고서 작성<br>PDF로 내보내기 클릭 시 체험학습 종료</td>
+  </tr>
+</table>
 
 ## 3. 기대효과
 
