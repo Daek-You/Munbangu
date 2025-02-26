@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ssafy.model.mapper.room.GroupMapper">
+
+    <!-- 조에 속한 멤버 수 -->
+    <select id="countMembers" parameterType="map" resultType="int">
+        SELECT COUNT(*)
+        FROM memberships
+        WHERE room_id = #{roomId}
+          AND group_no = #{groupNo}
+    </select>
+
+    <!-- 전체 인증샷 미션의 총 개수 -->
+    <select id="countTotalMissions" resultType="int">
+        SELECT COUNT(*)
+        FROM mission_positions
+        WHERE code_id = 'M003'
+    </select>
+
+    <!-- 조가 완료한 인증샷 미션 수 -->
+    <select id="countCompletedMissions" parameterType="map" resultType="int">
+        SELECT COUNT(DISTINCT p.mission_id)
+        FROM pictures p
+                 JOIN memberships m ON p.user_id = m.user_id AND p.room_id = m.room_id
+                 JOIN mission_positions mp ON p.mission_id = mp.mission_id
+        WHERE m.room_id = #{roomId}
+          AND m.group_no = #{groupNo}
+          AND mp.code_id = 'M003'
+    </select>
+
+    <!-- 특정 조 멤버 목록 -->
+    <select id="selectMembers" parameterType="map"
+            resultType="com.ssafy.controller.room.group.GroupDetailResponse$MemberDto">
+
+        SELECT
+            u.user_id     AS userId,
+            u.nickname    AS nickname,
+            m.code_id     AS codeId
+        FROM memberships m
+                 JOIN users u ON m.user_id = u.user_id
+        WHERE m.room_id = #{roomId}
+          AND m.group_no = #{groupNo}
+    </select>
+
+    <!-- 인증샷(VerificationPhotos) 조회 -->
+    <select id="selectVerificationPhotos" parameterType="map"
+            resultType="com.ssafy.controller.room.group.GroupDetailResponse$VerificationPhotoDto">
+
+        SELECT
+            p.picture_id     AS pictureId,
+            p.picture_url    AS pictureUrl,
+            p.mission_id     AS missionId,
+            DATE_FORMAT(p.completion_time, '%Y-%m-%d %H:%i:%s') AS completionTime
+        FROM pictures p
+                JOIN memberships m ON p.user_id = m.user_id
+                                   AND p.room_id = m.room_id
+        WHERE m.room_id = #{roomId}
+          AND m.group_no = #{groupNo}
+    </select>
+
+    <!-- 방문한 장소(VisitedPlace) 조회 -->
+    <select id="selectVisitedPlaces" parameterType="map"
+            resultType="com.ssafy.controller.room.group.GroupDetailResponse$VisitedPlaceDto">
+
+        SELECT
+            p.mission_id AS missionId,
+            mp.position_name AS positionName,
+            DATE_FORMAT(p.completion_time, '%Y-%m-%d %H:%i:%s') AS completedAt
+        FROM pictures p
+                 JOIN memberships m ON p.user_id = m.user_id
+                                    AND p.room_id = m.room_id
+                 JOIN mission_positions mp ON p.mission_id = mp.mission_id
+        WHERE m.room_id = #{roomId}
+          AND m.group_no = #{groupNo}
+          AND mp.code_id = 'M003'
+    </select>
+
+    <!-- 특정 조의 특정 유저 DELETE (조원 삭제) -->
+    <delete id="deleteMember" parameterType="map">
+        DELETE FROM memberships
+        WHERE room_id = #{roomId}
+          AND group_no = #{groupNo}
+          AND user_id = #{userId}
+    </delete>
+
+    <update id="updateMemberToMember" parameterType="map">
+        UPDATE memberships
+        SET code_id = 'J002'
+        WHERE room_id = #{roomId}
+          AND group_no = #{groupNo}
+          AND code_id = 'J001'
+    </update>
+
+    <select id="findLeaderInGroup" parameterType="map" resultType="long">
+        SELECT user_id
+        FROM memberships
+        WHERE room_id = #{roomId}
+          AND group_no = #{groupNo}
+          AND code_id = 'J001'
+        ORDER BY user_id ASC
+            LIMIT 1
+    </select>
+
+
+    <insert id="insertMembership" parameterType="map" useGeneratedKeys="true" keyProperty="membershipId">
+        INSERT INTO memberships (user_id, room_id, group_no, code_id)
+        VALUES (#{userId}, #{roomId}, #{groupNo}, #{codeId})
+    </insert>
+
+
+
+</mapper>

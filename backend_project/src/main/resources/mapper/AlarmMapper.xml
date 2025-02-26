@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ssafy.model.mapper.fcm.AlarmMapper">
+
+    <insert id="insert" parameterType="Alarm">
+        INSERT INTO alarms (
+            user_id,
+            title,
+            content,
+            sent_time
+        ) VALUES (
+                     #{userId},
+                     #{title},
+                     #{content},
+                     NOW()
+                 )
+    </insert>
+
+    <select id="selectByUserId" resultType="Alarm">
+        SELECT
+            alarm_id as alarmId,
+            user_id as userId,
+            title,
+            content,
+            DATE_FORMAT(sent_time, '%Y년 %m월 %d일 %H:%i') as sentTime
+        FROM alarms
+        WHERE user_id = #{userId}
+        ORDER BY sent_time DESC
+    </select>
+
+</mapper>

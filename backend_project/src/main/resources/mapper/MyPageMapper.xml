@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ssafy.model.mapper.mypage.MypageMapper">
+    <!-- 닉네임 변경하기 -->
+    <update id="changeNickname">
+        UPDATE users
+        SET nickname = #{newNickname}
+        WHERE user_id = #{userId}
+    </update>
+
+    <!-- 회원 탈퇴 -->
+    <update id="withdrawUser">
+        UPDATE users
+        SET is_deleted = true
+        WHERE user_id = #{userId}
+    </update>
+
+    <!-- 유저 정보 조회 -->
+    <select id="getMyPageUserInfo" resultType="com.ssafy.controller.mypage.MyPageResponse$UserInfo">
+        SELECT email, name, nickname
+        FROM users
+        WHERE user_id = #{userId}
+    </select>
+
+    <!-- 시도한 문제 목록 조회 -->
+    <select id="getAttempedProblems" resultType="com.ssafy.controller.mypage.MyPageResponse$AttemptedProblem">
+        SELECT l.card_id as cardId,
+               COALESCE(hp.heritage_name, sp.object_name) as name,
+               COALESCE(
+                       hp.image_url,
+                       CASE
+                           WHEN l.result = true AND sp.color_icon_image_url IS NOT NULL
+                               THEN sp.color_icon_image_url
+                           WHEN sp.black_icon_image_url IS NOT NULL
+                               THEN sp.black_icon_image_url
+                           END
+               ) as imageUrl,
+               DATE_FORMAT(l.created_at, '%Y-%m-%d %H:%i:%s') as lastAttempedAt
+        FROM logs l
+                 JOIN cards c ON l.card_id = c.card_id
+                 LEFT JOIN heritage_problems hp ON c.card_id = hp.card_id AND c.code_id = 'M001'
+                 LEFT JOIN story_problems sp ON c.card_id = sp.card_id AND c.code_id = 'M002'
+        WHERE l.user_id = #{userId}
+        ORDER BY l.created_at DESC
+    </select>
+
+    <!-- 풀이기록 상세 조회 -->
+    <select id="getLogDetail" resultType="com.ssafy.controller.mypage.MyPageResponse$LogDetail">
+        SELECT COALESCE(hp.heritage_name, sp.object_name) as cardName,
+            COALESCE(hp.image_url,
+                     CASE
+                         WHEN l.result = true THEN sp.color_icon_image_url
+                         ELSE sp.black_icon_image_url
+                     END
+            ) as imageUrl,
+            COALESCE(hp.description, sp.description) as description,
+            DATE_FORMAT(l.created_at, '%Y-%m-%d %H:%i:%s') as lastAttemptedAt
+        FROM cards c LEFT JOIN heritage_problems hp ON c.card_id = hp.card_id AND c.code_id = 'M001'
+        LEFT JOIN story_problems sp ON c.card_id = sp.card_id AND c.code_id = 'M002'
+        JOIN logs l ON c.card_id = l.card_id AND l.user_id = #{userId}
+        WHERE c.card_id = #{cardId}
+    </select>
+
+    <select id="getCard" parameterType="Long" resultType="com.ssafy.model.entity.Card">
+        SELECT card_id, code_id, name, image_url
+        FROM cards
+        WHERE card_id = #{cardId}
+    </select>
+
+
+</mapper>
