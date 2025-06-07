@@ -21,7 +21,7 @@
 | 프로젝트 설명 | 초등학생과 교사의 현장학습 경험을 개선하는 교육용 앱 |
 | 주요 기능 | GPS 기반 미션, 안전수칙 퀴즈, 학생들의 활동 추적, 만족도조사 자동화 |
 | 개발 기간 | 25.01.06 ~ 25.02.22 (7주) |
-| 팀 구성 | [손은주(BE, Leader)](https://github.com/handjoo) [제갈민(BE)](https://github.com/jgm00) [최대규(BE, Infra)](https://github.com/Daek-You) [김병년(FE)](https://github.com/KimByeongNyeon) [이용재(FE)](https://github.com/yongjae730) 박성민(FE) |  
+| 팀 구성 | [손은주(BE, Leader)](https://github.com/handjoo) [제갈민(BE)](https://github.com/jgm00) [최대규(BE, Infra)](https://github.com/Daek-You) [김병년(FE)](https://github.com/KimByeongNyeon) [이용재(FE)](https://github.com/yongjae730) 박성민(FE) <br> <img src="./images/팀-소개.png" width="460"> |  
 
 <table>
   <tr>
@@ -77,9 +77,6 @@
 - 문방구는 초등학생과 교사를 위한 교육용 문화재 탐방 어플리케이션입니다.
 - 학생은 GPS 기반 퀴즈와 미션을 수행하며 즐겁게 문화재를 학습할 수 있습니다.
 - 교사는 학생들의 위치와 활동 상태를 파악하며 체계젹인 현장학습 관리가 가능합니다.
-
-> <b>ℹ️[INFO]</b>  
-> 실제로 잘 작동되는지 확인하기 위해, 직접 `경복궁`에 가서 테스트를 진행하였습니다.  
 
 ### 프로젝트의 필요성
 
