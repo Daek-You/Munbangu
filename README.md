@@ -305,20 +305,25 @@
 
 ## 3. 담당 역할
 ### Infra
-- Docker를 활용한 애플리케이션 컨테이너화
-- Jenkins를 활용한 Back-end CI/CD 구축
-- Nginx Reverse Proxy 설정 및 HTTPS 프로토콜 적용
-- AWS S3를 활용해 카드, 인증샷 등의 이미지 관리
+- Docker 기반 애플리케이션 컨테이너화
+- Jenkins 활용 Back-end CI/CD 파이프라인 구축
+- Nginx Reverse Proxy 및 HTTPS(SSL) 인증서 설정
+- AWS S3를 활용한 이미지 업로드 및 정적 리소스 관리
 
 ### Back-end
 
-- 회원가입 및 로그인, 마이페이지 API 개발
-- 꾸미백과 API 개발
-- 지도에 필요한 문화재 유적지 내 정보 조회 API 개발
-- [Caffeine Cache](https://github.com/ben-manes/caffeine)를 도입해 동일 이미지 조회 속도 `107ms → 1ms`로 개선
+- 회원가입, 로그인, 마이페이지 관련 API 개발
+- Spring Security + JWT 기반 인증 시스템 구현
+- 꾸미백과 API 및 문화재 정보 조회 API 개발
+- MySQL ↔ SpringBoot 간 Polygon 좌표 데이터 저장 및 변환
+- [Caffeine Cache](https://github.com/ben-manes/caffeine) 도입으로 이미지 응답 속도 최적화 (`107ms → 1ms`)
 
-## 4. 문제 해결
+## 4. 프로젝트를 통해 배운 점
 
+- AWS, Docker, Jenkins와 같은 인프라 도구를 처음으로 실무에 적용하며, 막연했던 클라우드 시스템에 대한 이해를 구체화할 수 있었습니다.
+- 초반 기획 단계에서 팀원 간 아이디어의 차이가 컸지만, Figma 및 전자칠판을 활용한 시각적 협업을 통해 소통의 효율성을 크게 높일 수 있다는 점을 체감했습니다.
+- ERD 설계에 익숙하지 않아 초기에는 어려움을 겪었으나, 데이터베이스 이론 학습과 다양한 실전 예시를 참고하고, 경험자에게 피드백을 받으며 구조적인 설계를 배울 수 있었습니다.
+- 첫 백엔드 개발 경험이었기에 모든 것이 생소했지만, 팀원들과의 논의를 통해 프로젝트 구조와 개발 프로세스에 대한 감각을 키울 수 있었습니다.  
 
 <br>
 
