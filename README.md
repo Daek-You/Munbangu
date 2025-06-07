@@ -2,8 +2,8 @@
 ### ✏️"초등학생과 교사를 위한 교육용 문화재 탐방 어플"
 
 <p align="center">
-  <img src="./images/MBG Main.png">
-  <img src="./images/TMBG Main.png">
+  <img src="./images/MBG-Main.png">
+  <img src="./images/TMBG-Main.png">
 </p>
 <p align="center"><i>[앱 메인 화면] 학생용(왼쪽) / 교사용(오른쪽)</i></p>
 
