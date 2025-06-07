@@ -1,5 +1,4 @@
 # 문방구 (문화재 탐방 친구)
-## 1. 프로젝트 소개
 ### ✏️"초등학생과 교사를 위한 교육용 문화재 탐방 어플"
 
 <p align="center">
@@ -73,6 +72,16 @@
     </td>
   </tr>
 </table>
+
+<br>
+
+## 1. 프로젝트 소개
+
+<p align="center"><img src="./images/Overview.png" width="1000"></p>
+
+- 문방구는 초등학생과 교사를 위한 교육용 문화재 탐방 어플리케이션입니다.
+- 학생은 GPS 기반 퀴즈와 미션을 수행하며 즐겁게 문화재를 학습할 수 있습니다.
+- 교사는 학생들의 위치와 활동 상태를 파악하며 체계젹인 현장학습 관리가 가능합니다.
 
 ### 프로젝트의 필요성
 
@@ -151,8 +160,8 @@
     <td align="center"><b>알림 공지</b></td>
   </tr>
   <tr>
-    <td><img src="./images/초대코드 입력.gif" width="300"></td>
-    <td><img src="./images/일정알림.gif" width="300"></td>
+    <td align="center"><img src="./images/초대코드 입력.gif" width="300"></td>
+    <td align="center"><img src="./images/일정알림.gif" width="300"></td>
   </tr>
   <tr>
     <td>선생님으로부터 받은 초대코드를 입력해 방에 입장할 수 있습니다.</td>
@@ -163,8 +172,8 @@
     <td align="center"><b>만족도 조사</b></td>
   </tr>
   <tr>
-    <td><img src="./images/공지알림.gif" width="300"></td>
-    <td><img src="./images/만족도조사 (1).gif" width="300"></td>
+    <td align="center"><img src="./images/공지알림.gif" width="300"></td>
+    <td align="center"><img src="./images/만족도조사 (1).gif" width="300"></td>
   </tr>
   <tr>
     <td>선생님이 공지한 알림을 확인할 수 있습니다.</td>
@@ -180,8 +189,8 @@
     <td align="center"><b>미션 - 주관식 퀴즈</b></td>
   </tr>
   <tr>
-    <td><img src="./images/미션지도.png" width="300"></td>
-    <td><img src="./images/미션.png" width="300"></td>
+    <td align="center"><img src="./images/미션지도.png" width="300"></td>
+    <td align="center"><img src="./images/미션.png" width="300"></td>
   </tr>
   <tr>
     <td>현재 위치에서 가까운 순으로 미션 장소들을 보여줍니다.</td>
@@ -192,8 +201,8 @@
     <td align="center"><b>미션 - 인증샷</b></td>
   </tr>
   <tr>
-    <td><img src="./images/미션(객관식).png" width="300"></td>
-    <td><img src="./images/미션(인증샷).png" width="300"></td>
+    <td align="center"><img src="./images/미션(객관식).png" width="300"></td>
+    <td align="center"><img src="./images/미션(인증샷).png" width="300"></td>
   </tr>
   <tr>
     <td>특정 문화재에 대한 객관식 퀴즈를 풀고, 관련 카드를 얻을 수 있습니다.</td>
@@ -208,7 +217,7 @@
     <td align="center"><b>수집 아이템 확인</b></td>
   </tr>
   <tr>
-    <td><img src="./images/도감 페이지.gif" width="300"></td>
+    <td align="center"><img src="./images/도감 페이지.gif" width="300"></td>
   </tr>
   <tr>
     <td>수집한 문화재 카드들을 볼 수 있는 도감입니다.</td>
@@ -222,7 +231,7 @@
     <td align="center"><b>풀이 기록 확인</b></td>
   </tr>
   <tr>
-    <td><img src="./images/꾸미백과.gif" width="300"></td>
+    <td align="center"><img src="./images/꾸미백과.gif" width="300"></td>
   </tr>
   <tr>
     <td>풀었던 문제에 대한 문화재 정보를 자세하게 살펴볼 수 있습니다.</td>
@@ -240,8 +249,8 @@
     <td align="center"><b>그룹 상세 조회</b></td>
   </tr>
   <tr>
-    <td><img src="./images/팀생성.gif" width="300"></td>
-    <td><img src="./images/모자이크.gif" width="300"></td>
+    <td align="center"><img src="./images/팀생성.gif" width="300"></td>
+    <td align="center"><img src="./images/모자이크.gif" width="300"></td>
   </tr>
   <tr>
     <td>현장 체험 학습을 진행할 반 정보를 생성할 수 있습니다.</td>
@@ -256,7 +265,7 @@
     <td align="center"><b>공지 생성</b></td>
   </tr>
   <tr>
-    <td><img src="./images/공지.png" width="300"></td>
+    <td align="center"><img src="./images/공지.png" width="300"></td>
   </tr>
   <tr>
     <td>학생들에게 보낼 공지를 생성하고, 이전에 생성했던 공지 조회가 가능합니다.</td>
@@ -271,8 +280,8 @@
     <td align="center"><b>일정 조회</b></td>
   </tr>
   <tr>
-    <td><img src="./images/일정생성.png" width="300"></td>
-    <td><img src="./images/일정조회.png" width="300"></td>
+    <td align="center"><img src="./images/일정생성.png" width="300"></td>
+    <td align="center"><img src="./images/일정조회.png" width="300"></td>
   </tr>
   <tr>
     <td>일정을 생성할 수 있으며, 일정은 시작 10분 전에 학생들에게 알림이 전송됩니다.</td>
@@ -287,7 +296,7 @@
     <td align="center"><b>보고서 PDF 작성</b></td>
   </tr>
   <tr>
-    <td><img src="./images/보고서.gif" width="300"></td>
+    <td align="center"><img src="./images/보고서.gif" width="300"></td>
   </tr>
   <tr>
     <td>만족도 조사를 실시할 수 있습니다.<br> 만족도 조사를 완료한 학생을 확인할 수 있으며, 모든 학생이 완료하면 보고서가 생성됩니다.<br> "PDF로 내보내기" 클릭 시 파일을 받을 수 있으며 현장체험학습을 종료할 수 있습니다.</td>
