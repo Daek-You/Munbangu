@@ -1,4 +1,12 @@
 # 문방구 (문화재 탐방 친구)
+
+> <b>📌목차</b>  
+> 1. [프로젝트 소개](#1-프로젝트-소개)  
+> 2. [기능 소개](#2-기능-소개)  
+> 3. [담당 역할](#3-담당-역할)  
+> 4. [문제 해결](#4-문제-해결)  
+> 5. [프로젝트 아키텍처 및 ERD](#5-프로젝트-아키텍처-및-erd)  
+
 ### ✏️"초등학생과 교사를 위한 교육용 문화재 탐방 어플"
 
 <p align="center">
@@ -7,32 +15,13 @@
 </p>
 <p align="center"><i>[앱 메인 화면] 학생용(왼쪽) / 교사용(오른쪽)</i></p>
 
-<table>
-  <tr>
-    <th><b>앱 이름</b></th>
-    <td>문방구</td>
-  </tr>
-  <tr>
-    <th><b>프로젝트 목적</b></th>
-    <td>초등학생과 교사의 현장학습 경험을 개선하는 교육용 앱</td>
-  </tr>
-  <tr>
-    <th><b>주요 기능</b></th>
-    <td>GPS 기반 미션, 안전수칙 퀴즈, 학생들의 활동 추적, 만족도조사 자동화</td>
-  </tr>
-  <tr>
-    <th><b>개발 기간</b></th>
-    <td>25.01.06 ~ 25.02.22 (7주)</td>
-  </tr>
-  <tr>
-    <th><b>팀 구성</b></th>
-    <td>6인 (FE 3, BE 3)</td>
-  </tr>
-  <tr>
-    <th><b>담당 역할</b></th>
-    <td>백엔드 API 개발 + 인프라 구축</td>
-  </tr>
-</table>
+| 항목 | 내용 |
+| --- | --- |
+| 앱 이름 | 문방구 |
+| 프로젝트 설명 | 초등학생과 교사의 현장학습 경험을 개선하는 교육용 앱 |
+| 주요 기능 | GPS 기반 미션, 안전수칙 퀴즈, 학생들의 활동 추적, 만족도조사 자동화 |
+| 개발 기간 | 25.01.06 ~ 25.02.22 (7주) |
+| 팀 구성 | [손은주(BE, Leader)](https://github.com/handjoo) [제갈민(BE)](https://github.com/jgm00) [최대규(BE, Infra)](https://github.com/Daek-You) [김병년(FE)](https://github.com/KimByeongNyeon) [이용재(FE)](https://github.com/yongjae730) 박성민(FE) |  
 
 <table>
   <tr>
@@ -71,6 +60,12 @@
       <img src="https://img.shields.io/badge/nginx-009639?style=for-the-badge&logo=nginx&logoColor=white">
     </td>
   </tr>
+   <tr>
+    <td><code>Cooperation</code></td>
+    <td>
+      <img src="https://img.shields.io/badge/Figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white"> <img src="https://img.shields.io/badge/Jira-0052CC?style=for-the-badge&logo=jira&logoColor=white"> <img src="https://img.shields.io/badge/Notion-000000?style=for-the-badge&logo=notion&logoColor=white"> <img src="https://img.shields.io/badge/Mattermost-0058CC?style=for-the-badge&logo=mattermost&logoColor=white"> <img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white"> <img src="https://img.shields.io/badge/GitLab-FC6D26?style=for-the-badge&logo=gitlab&logoColor=white">
+    </td>`
+  </tr>
 </table>
 
 <br>
@@ -82,6 +77,9 @@
 - 문방구는 초등학생과 교사를 위한 교육용 문화재 탐방 어플리케이션입니다.
 - 학생은 GPS 기반 퀴즈와 미션을 수행하며 즐겁게 문화재를 학습할 수 있습니다.
 - 교사는 학생들의 위치와 활동 상태를 파악하며 체계젹인 현장학습 관리가 가능합니다.
+
+> <b>ℹ️[INFO]</b>  
+> 실제로 잘 작동되는지 확인하기 위해, 직접 `경복궁`에 가서 테스트를 진행하였습니다.  
 
 ### 프로젝트의 필요성
 
@@ -302,3 +300,29 @@
     <td>만족도 조사를 실시할 수 있습니다.<br> 만족도 조사를 완료한 학생을 확인할 수 있으며, 모든 학생이 완료하면 보고서가 생성됩니다.<br> "PDF로 내보내기" 클릭 시 파일을 받을 수 있으며 현장체험학습을 종료할 수 있습니다.</td>
   </tr>
 </table>
+
+<br>
+
+## 3. 담당 역할
+### Infra
+- Docker를 활용한 애플리케이션 컨테이너화
+- Jenkins를 활용한 Back-end CI/CD 구축
+- Nginx Reverse Proxy 설정 및 HTTPS 프로토콜 적용
+- AWS S3를 활용해 카드, 인증샷 등의 이미지 관리
+
+### Back-end
+
+- 회원가입 및 로그인, 마이페이지 API 개발
+- 꾸미백과 API 개발
+- 지도에 필요한 문화재 유적지 내 정보 조회 API 개발
+- [Caffeine Cache](https://github.com/ben-manes/caffeine)를 도입해 동일 이미지 조회 속도 `107ms → 1ms`로 개선
+
+## 4. 문제 해결
+
+
+<br>
+
+## 5. 프로젝트 아키텍처 및 ERD
+
+<img src="./images/Project-Architecture.png" width="1200">
+<img src="./images/MBG-ERD.png" width="1200">
