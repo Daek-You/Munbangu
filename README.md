@@ -318,6 +318,8 @@
 - MySQL ↔ SpringBoot 간 Polygon 좌표 데이터 저장 및 변환
 - [Caffeine Cache](https://github.com/ben-manes/caffeine) 도입으로 이미지 응답 속도 최적화 (`107ms → 1ms`)
 
+<br>
+
 ## 4. 프로젝트를 통해 배운 점
 
 - AWS, Docker, Jenkins와 같은 인프라 도구를 처음으로 실무에 적용하며, 막연했던 클라우드 시스템에 대한 이해를 구체화할 수 있었습니다.
